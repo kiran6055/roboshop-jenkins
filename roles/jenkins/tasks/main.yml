@@ -11,4 +11,3 @@
 - name: pipeline jobs file
   ansible.builtin.include_tasks: pipeline.yml
   loop: "{{ pipeline_jobs }}"
-

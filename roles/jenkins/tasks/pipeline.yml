@@ -1,4 +1,4 @@
-- name: create  config file
+- name: create config file
   ansible.builtin.template:
     src: s-job.xml
     dest: /tmp/s-job.xml
