@@ -10,4 +10,7 @@
 
 - name: pipeline jobs file
   ansible.builtin.include_tasks: pipeline.yml
+  vars:
+    COMPONENT: "{{item}}"
+    DIR: "{{item.dir}}"
   loop: "{{ pipeline_jobs }}"
