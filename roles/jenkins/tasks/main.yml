@@ -11,4 +11,4 @@
 - name: pipeline jobs file
   ansible.builtin.include_tasks: pipeline.yml
   loop:
-    - {name: "frontend", dir: "CIpipelines" }
+    - {name: "frontend", dir: "CIpipelines"}
