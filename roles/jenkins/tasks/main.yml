@@ -1,4 +1,4 @@
-- name: create config file
-  ansible.builtin.include_tasks: pipeline.yml
+- name: Apply tags to tasks within included file
+  ansible.builtin.include_tasks: install.yml
   loop:
     - frontend
