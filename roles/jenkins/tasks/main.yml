@@ -1,4 +1,4 @@
 - name: create config file
   ansible.builtin.include_tasks: pipeline.yml
-  loops:
+  loop:
     - frontend
