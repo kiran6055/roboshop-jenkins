@@ -1,6 +1,6 @@
 - name: create folder config file
   ansible.builtin.template:
-    src: "{{TEMPLATE}}"
+    src: folder.xml
     dest: /tmp/folder.xml
 
 - name: create
@@ -13,7 +13,7 @@
 
 - name: create  config file
   ansible.builtin.template:
-    src: "{{TEMPLATE}}"
+    src: job.xml
     dest: /tmp/job.xml
 
 - name: create
