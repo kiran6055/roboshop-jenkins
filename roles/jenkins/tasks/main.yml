@@ -10,3 +10,5 @@
   ansible.builtin.include_tasks: pipeline.yml
   loop:
     - {name: "frontend1", dir: "CIpipelines"}
+  vars:
+    TEMPLATE: pipeline.xml
