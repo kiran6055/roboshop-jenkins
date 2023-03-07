@@ -1,4 +1,12 @@
+- name: create folder
+  ansible.builtin.include_tasks: pipeline.yml
+  loop:
+    - CIpipelines
+  vars:
+    TEMPLATE: folder.xml
+
+
 - name: pipeline jobs file
   ansible.builtin.include_tasks: pipeline.yml
   loop:
-    - frontend1
+    - {name: "frontend1", dir: "CIpipelines"}
