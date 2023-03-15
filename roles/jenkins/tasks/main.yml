@@ -8,6 +8,10 @@
   loop: "{{ folders }}"
 
 
-- name: pipeline jobs file
+- name: create multibranch pipeline jobs file
   ansible.builtin.include_tasks: m-branchpipeline.yml
   loop: "{{ CI_pipeline_jobs }}"
+
+- name: create singlebranch pipeline jobs file
+  ansible.builtin.include_tasks: s-branchpipeline.yml
+  loop: "{{ sbranchpipeline_jobs}}"
