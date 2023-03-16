@@ -1,5 +1,5 @@
-- name: Check if job exists or not
-  ansible.builtin.shell:  java -jar jenkins-cli.jar -auth admin:{{jenkins_password}} -s http://172.31.2.167:8080/ -webSocket get-job {{item.dir}}/{{item.name}}
+- name: Check if Job exists or not - {{item.dir}}/{{item.name}}
+  ansible.builtin.shell: java -jar /opt/jenkins-cli.jar -auth admin:{{jenkins_password}} -s http://172.31.2.167:8080 -webSocket get-job {{item.dir}}/{{item.name}}
   register: out
   ignore_errors: yes
 
