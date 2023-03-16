@@ -1,11 +1,11 @@
-- name: check if job exists or not
+- name: Check if job exists or not
   community.general.jenkins_job_info:
     url: http://172.31.2.167:8080
     user: admin
     password: "{{jenkins_password}}"
-    name: "{{item.dir}}/{{item.name }}"
+    name: "{{item.dir}}/{{item.name}}"
   register: out
-  ignore_error: yes
+  ignore_errors: yes
 
 - name: create config file
   ansible.builtin.template:
