@@ -19,7 +19,7 @@
     <triggers>
         <com.igalg.jenkins.plugins.mswt.trigger.ComputedFolderWebHookTrigger plugin="multibranch-scan-webhook-trigger">
             <spec></spec>
-            <token>http://jenkins.kiranprav.link:8080/multibranch-webhook-trigger/invoke?token={{item.name}}</token>
+            <token>http://jenkins.awsctr.online:8080/multibranch-webhook-trigger/invoke?token={{item.name}}</token>
         </com.igalg.jenkins.plugins.mswt.trigger.ComputedFolderWebHookTrigger>
     </triggers>
     <disabled>false</disabled>
