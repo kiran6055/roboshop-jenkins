@@ -1,6 +1,6 @@
 CI_pipeline_jobs:
   - {name: "frontend", dir: "CIpipelines"}
-  - {name: "cart", dir: "CIpipelines"}
+  - {name: "CART", dir: "CIpipelines"}
   - {name: "catalogue", dir: "CIpipelines"}
   - {name: "user", dir: "CIpipelines"}
   - {name: "shipping", dir: "CIpipelines"}
