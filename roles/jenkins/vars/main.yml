@@ -10,9 +10,11 @@ CI_pipeline_jobs:
 folders:
   - CIpipelines
   - Infra
+  - CD
 
 sbranchpipeline_jobs:
   - {name: "roboshop-infra", dir: "Infra"}
+  - {name: "roboshop-ansible", dir: "Infra"}
 
 
 
